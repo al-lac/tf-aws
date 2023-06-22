@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "mybucket"
-    key    = "path/to/my/key"
-    region = "us-east-1"
+    bucket = "tf-controller-alex-bucket"
+    key    = "atlantis"
+    region = "eu-central-1"
   }
   required_providers {
     aws = {
