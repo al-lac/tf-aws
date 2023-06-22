@@ -52,7 +52,7 @@ resource "aws_s3_object" "qr" {
 
   bucket = aws_s3_bucket.alex.id
   key    = "github-aws.png"
-  source = "${path.module}/content/github-aws.png"
+  source = "github-aws.png"
   acl    = "public-read"
 }
 
@@ -63,7 +63,7 @@ resource "aws_s3_object" "index" {
 
   bucket = aws_s3_bucket.alex.id
   key    = "index.html"
-  source = "${path.module}/content/index.html"
+  source = "index.html"
   acl    = "public-read"
   content_type = "text/html"
 }
