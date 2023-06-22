@@ -1,0 +1,8 @@
+version: 3
+projects:
+- dir: atlantis
+  workspace: default
+  terraform_version: v1.5.1
+  autoplan:
+    when_modified: ["*.tf", "*.tfvars"]
+    enabled: true
