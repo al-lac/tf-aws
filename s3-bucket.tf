@@ -7,6 +7,18 @@ resource "aws_s3_bucket" "alex" {
   }
 }
 
+resource "aws_s3_bucket_website_configuration" "alex" {
+  bucket = aws_s3_bucket.alex.id
+
+  index_document {
+    suffix = "index.html"
+  }
+
+  error_document {
+    key = "error.html"
+  }
+}
+
 resource "aws_s3_bucket_ownership_controls" "alex" {
   bucket = aws_s3_bucket.alex.id
   rule {
@@ -33,9 +45,25 @@ resource "aws_s3_bucket_acl" "alex" {
   acl    = "public-read"
 }
 
-resource "aws_s3_object" "index" {
+resource "aws_s3_object" "qr" {
+  depends_on = [
+    aws_s3_bucket_acl.alex,
+  ]
+
   bucket = aws_s3_bucket.alex.id
   key    = "github-aws.png"
   source = "content/github-aws.png"
   acl    = "public-read"
+}
+
+resource "aws_s3_object" "index" {
+  depends_on = [
+    aws_s3_bucket_acl.alex,
+  ]
+
+  bucket = aws_s3_bucket.alex.id
+  key    = "index.html"
+  source = "content/index.html"
+  acl    = "public-read"
+  content_type = "text/html"
 }
