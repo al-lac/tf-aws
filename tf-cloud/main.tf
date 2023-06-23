@@ -7,10 +7,6 @@ terraform {
   }
 }
 
-output "aws" {
-  value = data.hcp_vault_secrets_app.aws.secrets
-}
-
 variable "access" {
   type = string
 }
