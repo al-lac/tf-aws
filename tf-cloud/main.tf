@@ -19,7 +19,7 @@ data "hcp_vault_secrets_app" "aws" {
 }
 
 output "aws" {
-  value = data.hcp_vault_secrets_app.hcp_vault_secrets_app.secrets
+  value = data.hcp_vault_secrets_app.aws.secrets
 }
 
 variable "access" {
