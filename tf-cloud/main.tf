@@ -4,18 +4,7 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
-    hcp = {
-        source  = "hashicorp/hcp"
-        version = "~> 0.61.0"
-    }
   }
-}
-
-# Configure the  HCP provider
-provider "hcp" {}
-
-data "hcp_vault_secrets_app" "aws" {
-  app_name = "aws"
 }
 
 output "aws" {
