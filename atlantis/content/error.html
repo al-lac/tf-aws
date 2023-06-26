@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Display</title>
+    <title>Error Page</title>
     <style>
         body {
             display: flex;
@@ -18,26 +18,26 @@
             text-align: center;
         }
 
-        img {
-            width: 80%;
-            /* Adjust this to make the image larger or smaller */
-            height: auto;
-            max-width: 600px;
-            /* Maximum width of the image */
+        h1 {
+            color: #ff0000;
         }
 
-        @media only screen and (min-width: 768px) {
-            img {
-                width: 600px;
-                /* Fixed width on larger screens */
-            }
+        p {
+            font-size: 18px;
+        }
+
+        img {
+            max-width: 50%;
+            height: auto;
+            margin-top: 20px;
         }
     </style>
 </head>
 
 <body>
-    <h1>Link to Terraform GitOps Repository - Deployed by Atlantis</h1>
-    <img src="github-aws.png" alt="Github AWS QR Code">
+    <h1>Ooops! Something went wrong.</h1>
+    <p>We apologize for the inconvenience.</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/603/603184.png" alt="Error Picture">
 </body>
 
 </html>
