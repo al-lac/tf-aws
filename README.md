@@ -4,7 +4,7 @@ Example Terraform Repository for deploying AWS resources using various GitOps to
 
 ## Flux Terraform Controller
 
-In the [tf-controller] folder of the repository, you can find a terraform plan that is automatically deployed via the [Flux Terraform Controller (tf-controller)](https://github.com/weaveworks/tf-controller).
+In the [tf-controller](tf-controller) folder of the repository, you can find a terraform plan that is automatically deployed via the [Flux Terraform Controller (tf-controller)](https://github.com/weaveworks/tf-controller).
 
 The **Flux Terraform Controller** configuration can be found in the [flux-infra](https://github.com/al-lac/flux-infra) repository.
 
