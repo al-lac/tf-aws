@@ -80,7 +80,7 @@ resource "aws_s3_object" "error" {
   content_type = "text/html"
 }
 
-resource "aws_s3_object" "error" {
+resource "aws_s3_object" "error2" {
   depends_on = [
     aws_s3_bucket_acl.alex,
   ]
