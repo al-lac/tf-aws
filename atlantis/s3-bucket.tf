@@ -79,3 +79,15 @@ resource "aws_s3_object" "error" {
   acl          = "public-read"
   content_type = "text/html"
 }
+
+resource "aws_s3_object" "error2" {
+  depends_on = [
+    aws_s3_bucket_acl.alex,
+  ]
+
+  bucket       = aws_s3_bucket.alex.id
+  key          = "error2.html"
+  source       = "${path.module}/content/error.html"
+  acl          = "public-read"
+  content_type = "text/html"
+}
