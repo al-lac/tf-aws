@@ -24,3 +24,13 @@ If everything is deployed correctly, you should find a website with a QR Code th
 When changes get pushed into the [tf-cloud](tf-cloud) folder. [Terraform Cloud](https://app.terraform.io/app) will automatically start a new plan. The plan can be viewed and applied by going to the Terraform Cloud interface and clicking on **apply**.
 
 If everything is deployed correctly, you should find a website with a QR Code that links back to this repository [here](https://bucket-tf.iamroot.at).
+
+## CNCF Linz Meetup - June 27 2023
+
+This repository was used for doing demos at the **CNCF Linz Meetup on June 27 2023** during the **GitOps + Terrafrom** talk.
+
+You can find the matching slides [here](https://github.com/CloudNativeLinz/cloudnativelinz.github.io/blob/main/slides/2023-06/GitOps%20and%20Terraform.pdf).
+
+The talk can also be found on YouTube:
+
+[![Watch the video](https://img.youtube.com/vi/hG1ybXgz20o/maxresdefault.jpg)](https://www.youtube.com/watch?v=hG1ybXgz20o&list=PLELUg_n2mVHe898HSHYhNp7_wG3inGuh2)
